@@ -1,0 +1,49 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "Examination 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devstart": "nodemon --inspect app.js",
+    "lint": "npx eslint . || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv023/student/ar223ng/assignment-2.git"
+  },
+  "author": "Adrian Rosales",
+  "license": "MIT",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "nodemon": "^2.0.6"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "bootstrap": "^4.5.3",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.4",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "http-errors": "^1.8.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.10",
+    "morgan": "^1.10.0"
+  },
+  "nodemonConfig": {
+    "ext": "js,json,hbs,html,css"
+  }
+}

@@ -1,0 +1,29 @@
+  <div class="container1">
+    <div class="form-container">
+    <h1>Edit</h1>
+      <form class="add-snippet-form" action="/snippets/update/{{snippetz._id}}" method="POST">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <input type="hidden" name="_id" value="{{snippetz._id}}">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" value="{{snippetz.title}}">
+        </div>
+        <div class="form-group">
+          <label for="body">Code Snippet:</label>
+          <textarea id="body" name="snippet" rows="8" cols="80">{{snippetz.snippet}}</textarea>
+        </div>
+        <div>
+          <label for="notes">Notes:</label>
+          <input type="text" id="notes" name="notes" value="{{snippetz.notes}}">
+        </div>
+        <div class="form-group">
+        </div>
+        <button class="success-button" type="submit">Edit snippet</button>
+      </form>
+      <a class="terminate-button" href="/snippets">Cancel</a>
+
+    </div>
+
+  </div>
+
+</div>

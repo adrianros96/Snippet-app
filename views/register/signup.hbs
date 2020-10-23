@@ -1,0 +1,21 @@
+{{#if flash }}
+    <div class="alert alert-{{flash.type}}">
+        {{flash.message}}
+    </div>
+{{/if}}
+<div class="d-flex justify-content-center">
+<form method="POST" action="signup">
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
+<h3><span lang="SV">Register user</span></p></h6>
+
+<span lang="sv">Username</span><br>
+ <input type="text" name="username" placeholder="Enter username"><br><br>
+
+<span lang="sv">Password</span><br>
+ <input type="password" name="password" placeholder="Enter password" minlength="8" required><br><br>
+
+
+ <input type="submit" name="submit" value="Create user">
+
+</form>
+</div>

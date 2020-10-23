@@ -1,0 +1,41 @@
+  
+  <div class="container1">
+    <div class="form-container">
+    <h1>Create Snippet</h1>
+      <form class="add-snippet-form" action="/snippets/create" method="POST">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="body">Code Snippet:</label>
+          <textarea id="body" name="snippet" rows="8" cols="80" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="notes">Notes:</label>
+          <input type="text" id="notes" name="notes" required>
+        </div>
+        <div class="form-group">
+          <label for="language">Language:</label>
+          <select name="language" required>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+          </select>
+        </div>
+        <div class="form-group">
+        </div>
+        <button class="success-button" type="submit">Add Snippet</button>
+      </form>
+      <a class="terminate-button" href="/snippets">Cancel</a>
+
+    </div>
+
+  </div>
+
+</div>

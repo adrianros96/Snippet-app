@@ -1,0 +1,26 @@
+<div class="snippets">
+<h1 class="headerSnipper">Snippets</h1>
+{{#if flash }}
+    <div class="fail alert alert-{{flash.type}}">
+        {{flash.message}}
+    </div>
+{{/if}}
+  {{#if viewData.snippetZ.length}}
+  {{#each viewData.snippetZ}}
+<div class="show">
+    <h4 class="headerSnipper">{{this.title}}</h4>
+{{#if this.owner}}
+<div class="actions">
+    <a href="/snippets/delete/{{this._id}}"><i class="material-icons">delete_forever</i></a>
+    <a href="/snippets/edit/{{this._id}}"><i class="material-icons">edit</i></a>
+</div>
+  {{/if}}
+    <pre>{{this.snippet}}</pre>
+    <p>Comment about the code: {{this.notes}}</p><br>
+    <p>Language: {{this.language}}</p><br>
+    <p class="madeBy">Created by: {{this.username}}</p><br>
+  </div>
+  {{/each}}
+  {{/if}}
+
+</div> 

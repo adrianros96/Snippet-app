@@ -1,0 +1,25 @@
+<!--Log in page HBS-->
+
+<div class="right-half">
+  </div>
+<div class='login'>
+<form method="POST" action="/">
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+<h3>Please log in</h3>
+
+<span lang="sv">Username</span><br>
+ <input type="text" name="username" placeholder="Enter username"><br><br>
+   {{#if flash }}
+    <div class="golumn alert alert-{{flash.type}}">
+        {{flash.message}}
+    </div>
+{{/if}}
+
+<span lang="sv">Password</span><br>
+ <input type="password" name="password" placeholder="Enter password"><br><br>
+<p>New account? Register <a href="/signup">here</a></p> <br>
+
+ <input type="submit" name="submit" value="login" class="hvr-grow-shadow">
+
+</form>
+</div>
