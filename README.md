@@ -6,8 +6,8 @@ This is a CRUD-application. There's also authentication involved. Javascript, Mo
 
 MVC-structure.
 
-git clone https://github.com/adrianros96/Snippet-app.git
-cd Snippet-app
-npm install
-npm start
-App is now running on localhost:8000
+* git clone https://github.com/adrianros96/Snippet-app.git
+* cd Snippet-app
+* npm install
+* npm start
+* App is now running on localhost:8000
